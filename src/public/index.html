@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Nightbot Song Tracker</h1>
+        <h3>A Local Web Server to Create a Widget Accessible from OBS via Web Source to Display Information About the Users Nightbot Song Queue</h3>
+        <a href="/api/nightbot/authorize" id="authorization">Login with Nightbot to get Started!</a>
+    </body>
+    <script>
+        let authorization = document.getElementById('authorization')
+        fetch('/api/generic/check-token-validity').then(res => {
+            console.log(res)
+            if (res.status === 200){
+                authorization.style = {display: 'hidden'}
+            }
+        })
+    </script>
+</html>

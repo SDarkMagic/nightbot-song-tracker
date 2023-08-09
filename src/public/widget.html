@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="/css/widget.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/widget.js"></script>
+    <script src="/js/websocket-client.js"></script>
+    <body>
+        <div class="container">
+            <img src="" id="song-thumbnail" class="thumbnail">
+            <div class="description">
+                <h3 class="title" id="title">Currently Playing: <span id="title-name">Song Title</span></h3>
+                <h3 class="title" id="artist">By: <span id="artist-name">Song Artist</span></h3>
+                <h3 class="title" id="requester">Requested By: <span id="requester-name">User</span></h3>
+            </div>
+            <progress id="song-duration" class="progress-bar" max="100" value="0"></progress>
+        </div>
+    </body>
+</html>
