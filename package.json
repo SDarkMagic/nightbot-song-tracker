@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
+    "build": "nexe ./src/index.js -r src/public/**/* -t windows-x64-14.5.0 -o build/SongTracker.exe",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

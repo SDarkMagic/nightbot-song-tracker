@@ -20,6 +20,8 @@
     margin-bottom: 3%;
     margin-top: 0;
     text-align: left;
+    font-family: Arial;
+    color: #ffffff;
 }
 
 .thumbnail {
@@ -32,6 +34,6 @@
 .container {
     padding: 2vw;
     max-width: 100vw;
-    background-color: #a5dae6;
+    /*background-color: #a5dae6;*/
     border-radius: 1%;
 }
